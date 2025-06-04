@@ -14,7 +14,7 @@ from langchain_groq import ChatGroq
 st.set_page_config(page_title="Sasi Kiran Boyapati Portfolio", layout="wide", page_icon="🤖")
 
 
-groq_key = "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"
+groq_key = ""
 
 # Theme selector
 selected_theme = st.sidebar.radio("🎨 Select Theme", ["Dark", "Light"])

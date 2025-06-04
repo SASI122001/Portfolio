@@ -4,7 +4,7 @@ import time
 import os
 import requests
 from pathlib import Path
-from dotenv import load_dotenv
+
 from PyPDF2 import PdfReader
 from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
@@ -15,8 +15,8 @@ from langchain_groq import ChatGroq
 
 st.set_page_config(page_title="Sasi Kiran Boyapati Portfolio", layout="wide", page_icon="🤖")
 
-load_dotenv()
-groq_key = os.getenv("GROQ_API_KEY")
+
+groq_key = "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"
 
 # Theme selector
 selected_theme = st.sidebar.radio("🎨 Select Theme", ["Dark", "Light"])

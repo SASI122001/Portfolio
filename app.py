@@ -5,7 +5,7 @@ import os
 import requests
 from pathlib import Path
 
-from PyPDF2 import PdfReader
+# from PyPDF2 import PdfReader
 from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
@@ -107,7 +107,7 @@ animate();
 
 # PDF to TXT
 if not os.path.exists("data/resume.txt") and os.path.exists("assets/resume.pdf"):
-    reader = PdfReader("assets/resume.pdf")
+    # reader = PdfReader("assets/resume.pdf")
     with open("data/resume.txt", "w", encoding="utf-8") as f:
         for page in reader.pages:
             text = page.extract_text()

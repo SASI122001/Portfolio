@@ -1,0 +1,19 @@
+An AI professional passionate about Artificial Intelligence with a focus on developing practical, real-world
+solutions using machine learning, deep learning, and natural language processing. Experienced in building
+and deploying models using Python, TensorFlow, PyTorch, OpenCV, and scikit-learn. Proficient in
+leveraging cloud platforms like AWS and GCP and containerization tools such as Docker and Kubernetes
+for scalable AI deployment.
+
+Specialized in LLM applications using LangChain and RAG pipelines, transformer-based models for
+reasoning, and CNNs for computer vision tasks. Skilled in data preprocessing, feature engineering, model
+training, hyperparameter tuning, and performance optimization. Knowledgeable in integrating NLP
+systems and staying up to date with cutting-edge AI trends including diffusion models and generative AI.
+Successfully contributed to AI-focused hackathons and tech events, with award-winning projects
+demonstrating strong problem-solving and innovation under tight deadlines. Maintains well-documented
+codebases and experimental workflows to ensure reproducibility and effective collaboration.
+
+Recognized at national-level tech events and AI hackathons for innovative project work, including sign
+language translation and predictive modelling. Comfortable working with cross-functional teams and
+adapting to fast-paced environments.
+Seeking opportunities in AI/ML roles to apply advanced technical expertise, drive innovation, and support
+data-driven decision-making across industries.

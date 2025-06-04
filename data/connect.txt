@@ -1,0 +1,8 @@
+<div style="font-size: 1.05em; line-height: 1.7;">
+  <h4>🔗 <strong>Connect with Me</strong></h4>
+  <p>
+    I'm always open to networking, collaborations, and new opportunities in AI, Software Development, and Data Science.
+    <br><br>
+    👉 <a href="https://www.linkedin.com/in/boyapatisasi/" target="_blank" style="color: #0072b1; font-weight: bold;">Visit My LinkedIn Profile</a>
+  </p>
+</div>

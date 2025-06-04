@@ -1,0 +1,61 @@
+Sasi Kiran Boyapati is an experienced AI/ML Developer with over 3 years of expertise in building, deploying, and scaling AI applications. His strengths lie in Retrieval-Augmented Generation (RAG), LangChain, LLMs, Streamlit, Groq API, and AWS. He has successfully delivered both academic and industry-grade ML systems across NLP, computer vision, and data engineering domains.
+
+🧠 PROFESSIONAL SUMMARY:
+- 3+ years in AI development, focused on GenAI, LLMs, and NLP
+- Strong hands-on with PyTorch, TensorFlow, Hugging Face Transformers, ChromaDB, and RAG pipelines
+- Delivered full-stack ML apps with Streamlit, FastAPI, Docker, and AWS (Lambda, EC2, S3)
+- MLOps experience with CI/CD, Git, Jenkins, Docker, Kubernetes
+
+💼 WORK EXPERIENCE:
+
+🔹 Aegis Technology (Jan 2025 – Present) — AI Developer
+- Built multi-agent RAG pipelines for clinical and safety information retrieval using LangChain, Groq, and ChromaDB
+- Developed scalable Streamlit + FastAPI applications for real-time model inference
+- Deployed production-ready pipelines on AWS using Docker and Git-based CI/CD with 99.9% uptime
+
+🔹 Texas Tech University (Aug 2023 – Jan 2025) — AI Developer
+- Designed LLM-based architectures with LangChain and OpenAI for document Q&A and chatbot workflows
+- Improved retrieval accuracy by 15% and reduced response latency by 30%
+- Led full-cycle development of NLP pipelines on datasets exceeding 1M records
+
+🔹 Norm Software Solutions (May 2022 – May 2023) — Data Analyst Intern
+- Analyzed EHR data to uncover performance trends and optimize API-driven sync systems
+- Delivered 40% improvement in patient data access and HIPAA-aligned audit readiness
+
+🎓 EDUCATION:
+- M.S. in Computer Science – Texas Tech University, USA (2023–2025) — GPA: 3.66/4.0
+- B.E. in CSE – Parul University, Gujarat (2019–2023) — GPA: 3.25/4.0
+
+📚 CERTIFICATIONS:
+- AWS Certified AI Practitioner (2025)
+- Amazon Bedrock Generative AI – Coursera (2025)
+- Master Generative AI, Euron (2025)
+- AI Externship – AT&T (2024)
+
+🛠 TECHNICAL SKILLS:
+- Languages: Python, Java, SQL
+- Libraries: TensorFlow, PyTorch, Keras, Hugging Face, Pandas, NumPy
+- Web Dev: HTML, CSS, React, Django, Node.js
+- AI/LLM Tools: OpenAI API, LangChain, Groq API, ChromaDB, RAG
+- DevOps: Docker, Git, Kubernetes, Jenkins, CI/CD
+- Cloud: AWS (Lambda, EC2, S3), Azure
+
+🚀 PROJECTS:
+
+1. **Sign Language Conversion System**
+   - Achieved 98% accuracy translating hand signs to text using CNN + OpenCV
+   - Implemented bi-directional sign-to-text and voice conversion for 500+ users
+
+2. **Mathematical Reasoning with LLMs**
+   - Developed and evaluated LLM models on 50K+ arithmetic tasks
+   - Improved reasoning by 7% using hybrid rule-based + retrieval-based methods
+
+3. **Resume-Aware Chatbot**
+   - Built a real-time AI chatbot using Groq, LangChain, and Streamlit to answer resume-based queries accurately
+
+🎯 GOAL:
+To drive innovation at the intersection of LLMs and user-centered AI applications, delivering reliable and intelligent systems that scale.
+
+📬 Contact:
+- Email: sasiboyapati.12@gmail.com
+- LinkedIn: https://www.linkedin.com/in/boyapatisasi/

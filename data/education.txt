@@ -1,0 +1,21 @@
+<div style="font-size: 1.05em; line-height: 1.7;">
+
+  <h4>🎓 <strong>Master of Science in Computer Science</strong></h4>
+  <ul>
+    <li><strong>University:</strong> Texas Tech University, USA</li>
+    <li><strong>Duration:</strong> Aug 2023 – May 2025</li>
+    <li><strong>Focus:</strong> Advanced Algorithms, AI & ML, Embedded Systems, Advanced DBMS</li>
+    <li><strong>Highlights:</strong> Developed AI solutions using LLMs, LangChain, FastAPI, and AWS; completed major academic projects in Natural Language Processing and Computer Vision.</li>
+  </ul>
+
+  <hr style="border: none; border-top: 1px dashed #999; margin: 1.2em 0;" />
+
+  <h4>🎓 <strong>Bachelor of Computer Science </strong></h4>
+  <ul>
+    <li><strong>University:</strong> Parul University, India</li>
+    <li><strong>Graduation Year:</strong> 2023</li>
+    <li><strong>Core Subjects:</strong> Python Programming, Data Mining, Big Data Technologies, SQL</li>
+    <li><strong>Achievements:</strong> Built foundational skills in software development, participated in coding competitions, and developed web and ML Applcation .</li>
+  </ul>
+
+</div>

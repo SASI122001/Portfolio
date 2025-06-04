@@ -1,0 +1,32 @@
+<div style="font-size: 1.05em; line-height: 1.7;">
+
+  <h4>💼 <strong>Aegis Technology</strong> <span style="float: right; color: gray;">Jan 2025 – Present</span></h4>
+  <p><em>AI Developer</em></p>
+  <ul>
+    <li>Engineered RAG pipelines using LLMs, ChromaDB, and LangChain to retrieve clinical and safety-related information, reducing retrieval latency by ~30%.</li>
+    <li>Designed scalable multi-agent workflows for NLP & vision with OpenAI APIs and custom retrievers.</li>
+    <li>Built real-time inference apps using <strong>Streamlit</strong> and <strong>FastAPI</strong> with seamless UX.</li>
+    <li>Deployed on AWS (Lambda, EC2, S3) with Docker & Git-based CI/CD, achieving 99.9% uptime and 40% faster deployment.</li>
+  </ul>
+
+  <hr style="border: none; border-top: 1px dashed #999; margin: 1.5em 0;" />
+
+  <h4>🏫 <strong>Texas Tech University</strong> <span style="float: right; color: gray;">Aug 2023 – Jan 2025</span></h4>
+  <p><em>AI Developer</em></p>
+  <ul>
+    <li>Developed LLM-based apps with LangChain and multi-agent RAG architectures, boosting retrieval accuracy by 15% and cutting latency by 30%.</li>
+    <li>Led end-to-end NLP systems from preprocessing to training on 1M+ records; boosted accuracy by 18%.</li>
+    <li>Used PyTorch, TensorFlow, FastAPI, and AWS to deploy scalable solutions with 20% faster CI/CD cycles.</li>
+  </ul>
+
+  <hr style="border: none; border-top: 1px dashed #999; margin: 1.5em 0;" />
+
+  <h4>🧪 <strong>Norm Software Solutions</strong> <span style="float: right; color: gray;">May 2022 – May 2023</span></h4>
+  <p><em>Data Analyst Intern</em></p>
+  <ul>
+    <li>Analyzed EHR datasets, improving patient data accessibility by 40%.</li>
+    <li>Engineered REST API syncs with external databases, ensuring 100% real-time data accuracy.</li>
+    <li>Ensured HIPAA compliance and improved audit readiness through secure reporting workflows.</li>
+  </ul>
+
+</div>

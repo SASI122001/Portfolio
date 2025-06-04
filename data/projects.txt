@@ -1,0 +1,28 @@
+<div style="font-size: 1.05em; line-height: 1.7;">
+
+  <h4>🖐️ <strong>Sign Language Conversion Application</strong></h4>
+  <ul>
+    <li>Developed a machine learning model using <strong>CNN</strong> and <strong>OpenCV</strong> to translate hand signs to text with 98% accuracy.</li>
+    <li>Implemented bi-directional sign-to-text and text-to-voice pipeline using <strong>TensorFlow</strong> and <strong>PyTorch</strong>, improving accessibility for 500+ users.</li>
+  </ul>
+
+  <hr style="border: none; border-top: 1px dashed #999; margin: 1.2em 0;" />
+
+  <h4>🧠 <strong>Mathematical Reasoning in LLMs</strong></h4>
+  <ul>
+    <li>Evaluated Transformer-based models on 50K+ arithmetic reasoning problems to test mathematical consistency and depth.</li>
+    <li>Improved accuracy by 7% using hybrid rule-based vs. retrieval-based evaluation strategies.</li>
+  </ul>
+
+  <hr style="border: none; border-top: 1px dashed #999; margin: 1.2em 0;" />
+
+  <h4>🤖 <strong>Personal AI Agent with Wake-Word Trigger</strong></h4>
+  <ul>
+    <li>Created a voice-activated AI assistant using <strong>LangChain</strong>, <strong>Groq API</strong>, and <strong>Streamlit</strong>, triggered only by wake-words like <code>"Hey Sasi"</code>.</li>
+    <li>Designed to stay idle until explicitly called, enhancing user control, privacy, and efficiency.</li>
+    <li>Integrated with <strong>ChromaDB</strong> and personal resume data for intelligent, context-aware answers to personal and professional questions.</li>
+    <li>Performs small daily tasks like opening apps, answering career-related questions, and responding based on voice or typed prompts.</li>
+    <li>Enhanced with animated themes, floating particles, and a dynamic chatbot UI with typing effect for an immersive user experience.</li>
+  </ul>
+
+</div>

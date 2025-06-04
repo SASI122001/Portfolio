@@ -1,0 +1,6 @@
+<ul style="list-style-type: none; padding: 0; font-size: 1.05em;">
+  <li>📜 <strong>AWS Certified AI Practitioner</strong> — <em>AWS</em>, <span style="color: #999;">2025</span></li>
+  <li>🧠 <strong>Amazon Bedrock: Getting Started with Generative AI</strong> — <em>Coursera</em>, <span style="color: #999;">2025</span></li>
+  <li>🚀 <strong>Master Generative AI</strong>: Professional-Level LLM App Dev — <em>Euron</em>, <span style="color: #999;">2025</span></li>
+  <li>🔧 <strong>AI Externship</strong> — <em>AT&T</em>, <span style="color: #999;">2024</span></li>
+</ul>

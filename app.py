@@ -5,7 +5,6 @@ import os
 import requests
 from pathlib import Path
 from dotenv import load_dotenv
-# from PyPDF2 import PdfReader
 from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
@@ -73,7 +72,7 @@ p, li {{
 </style>
 """, unsafe_allow_html=True)
 
-# Floating particles background
+# Floating particles background (optional visual effect)
 components.html("""
 <canvas id='particleCanvas' style='position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:-1'></canvas>
 <script>
@@ -105,14 +104,18 @@ animate();
 </script>
 """, height=0)
 
-# PDF to TXT
+# PDF to TXT conversion: Only run if both files exist and PyPDF2 is installed!
 if not os.path.exists("data/resume.txt") and os.path.exists("assets/resume.pdf"):
-    # reader = PdfReader("assets/resume.pdf")
-    with open("data/resume.txt", "w", encoding="utf-8") as f:
-        for page in reader.pages:
-            text = page.extract_text()
-            if text:
-                f.write(text + "\n")
+    try:
+        from PyPDF2 import PdfReader
+        reader = PdfReader("assets/resume.pdf")
+        with open("data/resume.txt", "w", encoding="utf-8") as f:
+            for page in reader.pages:
+                text = page.extract_text()
+                if text:
+                    f.write(text + "\n")
+    except ImportError:
+        pass  # PyPDF2 not installed, skip conversion
 
 @st.cache_resource
 def build_chatbot():
@@ -120,6 +123,8 @@ def build_chatbot():
     for txt_file in Path("data").glob("*.txt"):
         loader = TextLoader(str(txt_file))
         docs.extend(loader.load())
+    if not docs:
+        return None
     chunks = CharacterTextSplitter(chunk_size=800, chunk_overlap=100).split_documents(docs)
     vectorstore = Chroma.from_documents(chunks, HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2"), persist_directory="chroma_store")
     vectorstore.persist()
@@ -146,7 +151,7 @@ if os.path.exists("assets/resume.pdf"):
     with open("assets/resume.pdf", "rb") as f:
         st.download_button("📄 Download Resume", f, "SasiKiran_Resume.pdf", mime="application/pdf")
 
-# Show sections
+# Show sections (About, Certifications, Projects, etc.)
 for title, path in [
     ("📜 About Me", "data/about.txt"),
     ("🎓 Certifications", "data/certifications.txt"),
@@ -172,7 +177,7 @@ with st.form("contact_form"):
         else:
             st.warning("⚠️ Please fill out all fields before submitting.")
 
-# 💬 Chatbot
+# 💬 Chatbot (sidebar)
 st.sidebar.title("💬 SasiBot - Ask Me Anything")
 st.sidebar.caption("🧠 This chatbot uses only Sasi's resume & data.")
 
@@ -181,11 +186,15 @@ if "chat_history" not in st.session_state:
 
 user_input = st.sidebar.text_input("Ask about Sasi:", key="chat_input")
 if user_input:
-    try:
-        result = build_chatbot()({"query": user_input})
-        st.session_state.chat_history.append((user_input, result["result"]))
-    except Exception as e:
-        st.session_state.chat_history.append((user_input, f"❌ Error: {e}"))
+    chatbot = build_chatbot()
+    if chatbot is None:
+        st.sidebar.warning("❌ No data available for chat. Please upload some .txt files.")
+    else:
+        try:
+            result = chatbot({"query": user_input})
+            st.session_state.chat_history.append((user_input, result["result"]))
+        except Exception as e:
+            st.session_state.chat_history.append((user_input, f"❌ Error: {e}"))
 
 for q, a in reversed(st.session_state.chat_history):
     with st.sidebar.expander(f"🧑 You: {q}", expanded=False):
@@ -199,11 +208,9 @@ for q, a in reversed(st.session_state.chat_history):
 # 🌐 Connect with Me
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 🤝 Connect with Me")
-
 st.sidebar.markdown(
     "[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/boyapatisasi/)"
 )
-
 st.sidebar.markdown(
     "[![GitHub](https://img.shields.io/badge/GitHub-Code-black?style=for-the-badge&logo=github)](https://github.com/SASI122001)"
 )

@@ -4,6 +4,8 @@ import time
 import os
 import requests
 from pathlib import Path
+from dotenv import load_dotenv
+# from PyPDF2 import PdfReader
 from langchain.vectorstores import Chroma
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import CharacterTextSplitter
@@ -13,8 +15,8 @@ from langchain_groq import ChatGroq
 
 st.set_page_config(page_title="Sasi Kiran Boyapati Portfolio", layout="wide", page_icon="🤖")
 
-
-groq_key = ""
+load_dotenv()
+groq_key = os.getenv("GROQ_API_KEY")
 
 # Theme selector
 selected_theme = st.sidebar.radio("🎨 Select Theme", ["Dark", "Light"])
@@ -105,6 +107,7 @@ animate();
 
 # PDF to TXT
 if not os.path.exists("data/resume.txt") and os.path.exists("assets/resume.pdf"):
+    # reader = PdfReader("assets/resume.pdf")
     with open("data/resume.txt", "w", encoding="utf-8") as f:
         for page in reader.pages:
             text = page.extract_text()
